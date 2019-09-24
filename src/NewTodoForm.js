@@ -17,7 +17,7 @@ class NewTodoForm extends Component {
 
   handleSubmint(evt) {
     evt.preventDefault();
-    this.props.createTodo({ ...this.state, id: uuid() });
+    this.props.createTodo({ ...this.state, id: uuid(), completed: false });
     this.setState({
       task: ""
     });
@@ -26,7 +26,7 @@ class NewTodoForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmint}>
-        <label htmlFor='task'>New Todo</label>
+        <label htmlFor="task">New Todo</label>
         <input
           type="text"
           placeholder="New Todo"
