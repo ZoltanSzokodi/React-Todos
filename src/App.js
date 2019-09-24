@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import TodoList from './TodoList';
+import React, { Component } from "react";
+import TodoList from "./TodoList";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -7,7 +8,7 @@ class App extends Component {
       <div>
         <TodoList />
       </div>
-    )
+    );
   }
 }
 
